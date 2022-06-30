@@ -1,11 +1,90 @@
 .App {
   text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 10px 30px;
+}
+
+form {
+  display: flex;
+}
+
+.title {
+  color: #ead7d7;
+  font-size: 56px;
+}
+
+.footer__clear__btn {
+  background: transparent;
+  border: none;
+  align-self: center;
+}
+
+.footer__clear__btn--active {
+  display: block;
+  cursor: pointer;
+}
+
+.footer__clear__btn--disabled {
+  color: rgb(150, 150, 150);
+}
+
+.footer__clear {
+  display: flex;
+}
+
+.form__input {
+  outline: none;
+  height: 48px;
+  width: 98%;
+  font-size: 24px;
+  font-style: italic;
+  border: none;
+  /* margin-left: 20px; */
+}
+
+.container__todos {
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.footer__items-left {
+  align-self: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer * {
+  align-items: center;
+}
+
+.todo__btn__delete {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+
+.todo__left__checkbox {}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -32,6 +111,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
